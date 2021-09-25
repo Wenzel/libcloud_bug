@@ -19,7 +19,7 @@ def test_demo_ObjectHashMismatchError_with_pyfakefs(clean_minio_db, fs):
         assert f.read() == test_file_data
 
 
-def test_demo_ObjectHashMismatchError_with_tmp_path(clean_minio_db, tmp_path):
+def test_demo_InvalidCreds(clean_minio_db, tmp_path):
     # setup
     expected_data = b"data"
     with open(tmp_path / "file1.txt", "wb") as f:
