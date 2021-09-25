@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "libcloud_bug"
+version = "0.1.0"
+description = "demo of libcloud bug with ObjectHashMismatchError"
+authors = ["Mathieu Tarral <mathieu.tarral@protonmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+apache-libcloud = "^3.3.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pyfakefs = "^4.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
